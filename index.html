@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oort — Operating System for the Offline Economy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>OORT</h1>
+        <p class="tagline">If it's not happening now, it doesn't exist.</p>
+      </div>
+      <div class="zone-pill">Zone: Baguio Night Market</div>
+    </header>
+
+    <nav class="tabs" aria-label="Main Views">
+      <button class="tab-btn active" data-tab="for-you">For You</button>
+      <button class="tab-btn" data-tab="community">Community</button>
+      <button class="tab-btn" data-tab="nearby">Nearby</button>
+      <button class="tab-btn" data-tab="missions">Missions</button>
+    </nav>
+
+    <main>
+      <section id="for-you" class="tab-panel active">
+        <h2>Serendipity Layer</h2>
+        <div id="for-you-grid" class="masonry-grid"></div>
+      </section>
+
+      <section id="community" class="tab-panel">
+        <h2>Signal Layer</h2>
+        <div id="community-feed" class="feed-list"></div>
+      </section>
+
+      <section id="nearby" class="tab-panel">
+        <h2>Nearby · Building Stack</h2>
+        <p class="subtle">Grouped by Building ID. Expand to reveal live floor previews.</p>
+        <div id="nearby-stacks" class="stack-list"></div>
+      </section>
+
+      <section id="missions" class="tab-panel">
+        <h2>Bounty Board</h2>
+        <div id="missions-list" class="feed-list"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Mapless discovery by default.</span>
+      <span class="wallet">Oort Pay: <strong id="wallet-points">430</strong> pts</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
